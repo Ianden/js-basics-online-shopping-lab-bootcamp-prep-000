@@ -29,11 +29,11 @@ function viewCart() {
         response = response + `and ${Object.keys(cart[cart.length + 1])} at $${Object.values(cart[cart.length + 1])}`
       }
       response = response + '.'
+      debugger;
   } else {
     response = "Your shopping cart is empty.";
   }
   console.log(response);
-  debugger;
   return response
 }
 
