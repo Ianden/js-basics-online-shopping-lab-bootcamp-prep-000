@@ -44,6 +44,7 @@ function total() {
   for (var i = 0; i < cart.length - 1; i++) {
     total = total + Object.values(cart[i]);
   }
+  debugger;
   return total
 }
 
