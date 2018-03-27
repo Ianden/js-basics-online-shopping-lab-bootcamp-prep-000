@@ -42,7 +42,7 @@ function viewCart() {
 function total() {
   var total;
   for (var i = 0; i < cart.length - 1; i++) {
-    total = total + praseInt(Object.values(cart[i]));
+    total = total + parseInt(Object.values(cart[i]));
   }
   debugger;
   return total
