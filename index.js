@@ -21,7 +21,7 @@ function addToCart(item) {
 function viewCart() {
   var response
   debugger;
-  if (cart.length > 1) {
+  if (cart.length > 0) {
     response = `In your cart, you have ${Object.keys(cart)[0]} at ${Object.values(cart)[0]}`
 
       for (var i = 1; i < cart.length - 1; i++) {
