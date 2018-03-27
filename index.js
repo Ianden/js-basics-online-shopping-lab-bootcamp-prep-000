@@ -44,7 +44,6 @@ function total() {
   for (var i = 0; i < cart.length; i++) {
     total = total + parseInt(Object.values(cart[i]));
   }
-  debugger;
   return total
 }
 
