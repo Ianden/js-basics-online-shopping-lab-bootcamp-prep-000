@@ -26,7 +26,7 @@ function viewCart() {
         for (var i = 1; i < cart.length - 1; i++) {
           response = response + `, ${Object.keys(cart[i])} at $${Object.values(cart[i])}`
         }
-        response = response + `and ${Object.keys(cart[cart.length + - 1])} at $${Object.values(cart[cart.length - 1])}`
+        response = response + ` and ${Object.keys(cart[cart.length + - 1])} at $${Object.values(cart[cart.length - 1])}`
       }
       response = response + '.'
       debugger;
