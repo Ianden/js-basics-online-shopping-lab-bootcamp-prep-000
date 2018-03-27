@@ -23,7 +23,9 @@ function viewCart() {
   if (cart.length > 0) {
     response = `In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])}`
       if (cart.length > 1) {
-        response = response + ','
+        if (cart.length !== 2) {
+          response = response + ','
+        }
         for (var i = 1; i < cart.length - 1; i++) {
           response = response + ` ${Object.keys(cart[i])} at $${Object.values(cart[i])},`
         }
