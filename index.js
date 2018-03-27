@@ -20,6 +20,7 @@ function addToCart(item) {
 
 function viewCart() {
   var response
+  debugger;
   if (cart.length > 1) {
     response = `In your cart, you have ${Object.keys(cart)[0]} at ${Object.values(cart)[0]}`
 
@@ -31,7 +32,8 @@ function viewCart() {
   } else {
     response = "Your shopping cart is empty.";
   }
-  return response;
+  console.log(response);
+  return response
 }
 
 function total() {
