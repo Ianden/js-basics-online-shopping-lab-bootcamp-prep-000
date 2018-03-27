@@ -68,6 +68,7 @@ function placeOrder(cardNumber) {
     console.log(response);
   } else {
     response = "Sorry, we don't have a credit card on file for you."
+    console.log(response);
   }
   return response;
 }
