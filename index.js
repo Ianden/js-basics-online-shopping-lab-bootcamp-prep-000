@@ -33,7 +33,6 @@ function viewCart() {
     response = "Your shopping cart is empty.";
   }
   console.log(response);
-  debugger;
   return response
 }
 
